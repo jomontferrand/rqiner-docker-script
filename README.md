@@ -36,7 +36,7 @@ ssh-copy-id user@righostname
 ## 5. On the main computer, create docker contexts for each rig.
 
 ```
-docker context create david --docker host=ssh://my_user@my_rig_hostname
+docker context create a_unique_name_for_rig --docker host=ssh://my_user@my_rig_hostname
 ```
 
 Note: You'll already have a `default` docker context corresponding to the main computer.
