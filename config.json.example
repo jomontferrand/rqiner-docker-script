@@ -4,29 +4,33 @@
       "context": "default",
       "thread_count": "24",
       "label": "debrah-5900X",
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver3",
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
+      "miner": "qli",
+      "miner_url": "https://dl.qubic.li/downloads/qli-Client-1.8.10-Linux-x64.tar.gz",
+      "token": "my-qubic.li-access-token"
     },
     {
       "context": "debrah",
       "thread_count": "32",
       "label": "debrah-7950x32",
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver4",
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
+      "miner": "qli",
+      "miner_url": "https://dl.qubic.li/downloads/qli-Client-1.8.10-Linux-x64.tar.gz",
+      "token": "my-qubic.li-access-token"
     },
     {
       "context": "david",
       "thread_count": "32",
       "label": "david-7950x32",
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver4",
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
+      "miner": "rqiner",
+      "miner_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver4",
+      "token": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
     },
     {
       "context": "lappy",
       "thread_count": "4",
       "label": "zenbook",
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86",
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
+      "miner": "rqiner",
+      "miner_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86",
+      "token": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
     }
   ]
 }

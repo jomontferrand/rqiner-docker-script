@@ -1,0 +1,9 @@
+﻿{
+  "Settings": {
+    "baseUrl": "https://mine.qubic.li/",
+    "amountOfThreads": %%NUMTHREADS%%,
+    "payoutId": null,
+    "accessToken": "%%TOKEN%%",
+    "alias": "%%LABEL%%"
+  }
+}

@@ -1,6 +1,6 @@
 # QBMin
 
-This uses docker to automate deploying rqiner on your Qubic rigs.
+This uses docker to automate deploying either rqiner or qubic.li miner on your Qubic rigs.
 
 Let's assume we have a simple setup:
 
@@ -45,26 +45,32 @@ If you forget the name of the docker context, use `docker context ls` to list do
 
 ## 6. Configure config.json to your liking.
 
+Copy `config.json.example` to a new file called `config.json`. Edit it to fit your needs.
+
 It needs to be valid JSON and follow this format.
 
-Examlpe: (Remove the `# ...` comments!)
+Example: (Remove the `# ...` comments!)
 
 ```
 {
   "rigs": [
+    # Example rig qith rqiner:
     {
       "context": "default",    # This is the name of the docker context setup on step 5 for this rig.
-      "thread_count": "24",    # How many threads to run rqminer with.
+      "thread_count": "24",    # How many threads to run miner with.
       "label": "debrah-5900X", # A label to identify this rig.
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver3", # Which miner to download on this rig. See https://github.com/Qubic-Solutions/rqiner-builds/releases/tag/v0.3.14 for the full list.
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK" # The Wallet ID you want to send QUs to.
+      "miner": "rqiner",       # Either `qli` or `rqiner`.
+      "miner_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver3", # Which miner to download on this rig. See https://github.com/Qubic-Solutions/rqiner-builds/releases/ for the full list of available rqiner.
+      "token": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK" # The Wallet ID you want to send QUs to if you're using
     },
+    # Example rig qith qubic.li miner:
     {
-      "context": "default",
-      "thread_count": "32",
-      "label": "debrah-7950X",
-      "rqminer_url": "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.14/rqiner-x86-znver4",
-      "public_id": "YWLETVKDAQEHXDDUMGBHCFZBWYQCVWTLOZLWTNFHBEJPBWULIVFNGOMAERRK"
+      "context": "debbie" ,    # This is the name of the docker context setup on step 5 for this rig.
+      "thread_count": "32",    # How many threads to run miner with.
+      "label": "debrah-7950X", # A label to identify this rig.
+      "miner": "qli",          # Either `qli` or `rqiner`.
+      "miner_url": "https://dl.qubic.li/downloads/qli-Client-1.8.10-Linux-x64.tar.gz", # Which miner to download on the rig. See https://github.com/qubic-li/client/ for available qubic.li miner versions.
+      "token": "ey..."         # Your qubic.li access token.
     }
   ]
 }

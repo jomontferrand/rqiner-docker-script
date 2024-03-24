@@ -221,3 +221,4 @@ poetry.toml
 pyrightconfig.json
 
 config.json
+appsettings.json.rendered.*
