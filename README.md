@@ -1,4 +1,4 @@
-# QBMin
+# What?
 
 This uses docker to automate deploying either rqiner or qubic.li miner on your Qubic rigs.
 
