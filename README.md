@@ -7,6 +7,8 @@ Let's assume we have a simple setup:
 1. A main computer where you want to control rigs from.
 2. A number of rigs accessible from the network.
 
+Note: This was built using python 3.11, I have no idea if it's compatible with earlier python versions. It depends on no external dependencies, only Python standard library.
+
 # How-to?
 
 ## 1. Pick a main computer to control the rigs from.
